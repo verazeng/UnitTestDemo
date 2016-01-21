@@ -10,10 +10,10 @@
 
 @implementation Answer
 
-- (instancetype)initWithQuestion:(NSString *)question answer:(NSString *)answer {
+- (instancetype)initWithQuestion:(NSString *)question answer:(NSString *)answerText {
     if (self = [super init]) {
         _question = question;
-        _answer = answer;
+        _answerText = answerText;
     }
     return self;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "Criterion.h"
+#import "Answer.h"
 
 @implementation Criterion
 
@@ -20,6 +21,11 @@
         _weight = weight;
     }
     return self;
+}
+
+- (BOOL)isAnswerMatched:(Answer *)answer {
+    return self.weight == eCriterionNotCare ||
+    (self.weight == eCriterionMustMatch && [answer.answerText isEqualToString:self.answer.answerText]);
 }
 
 @end

@@ -36,10 +36,10 @@
 }
 
 - (BOOL)match:(Criteria *)criteria {
-    __block BOOL match;
+    __block BOOL match = YES;
     [[criteria criterions] enumerateObjectsUsingBlock:^(Criterion *criterion, NSUInteger idx, BOOL * _Nonnull stop) {
         Answer *myAnswer = [self answerForQuestion:criterion.answer.question];
-        if (![myAnswer.answer isEqualToString:criterion.answer.answer]){
+        if (![criterion isAnswerMatched:myAnswer]){
             match = NO;
             *stop = YES;
         };

@@ -21,5 +21,6 @@ typedef NS_ENUM(NSInteger, CriterionWeight) {
 @property (nonatomic) CriterionWeight weight;
 
 - (instancetype)initWithAnswer:(Answer *)answer weight:(CriterionWeight)weight;
+- (BOOL)isAnswerMatched:(Answer *)answer;
 
 @end

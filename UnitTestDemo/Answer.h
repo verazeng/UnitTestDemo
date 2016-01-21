@@ -11,8 +11,8 @@
 @interface Answer : NSObject
 
 @property (copy, nonatomic) NSString *question;
-@property (copy, nonatomic) NSString *answer;
+@property (copy, nonatomic) NSString *answerText;
 
-- (instancetype)initWithQuestion:(NSString *)question answer:(NSString *)answer;
+- (instancetype)initWithQuestion:(NSString *)question answer:(NSString *)answerText;
 
 @end
