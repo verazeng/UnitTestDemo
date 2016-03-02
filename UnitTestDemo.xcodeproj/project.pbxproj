@@ -471,6 +471,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = UnitTestDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = verazeng.UnitTestDemoTests;
@@ -483,6 +485,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = UnitTestDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = verazeng.UnitTestDemoTests;
@@ -534,6 +538,7 @@
 				D2E607141C4CBCCD00881C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2E607151C4CBCCD00881C09 /* Build configuration list for PBXNativeTarget "UnitTestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +547,7 @@
 				D2E607171C4CBCCD00881C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2E607181C4CBCCD00881C09 /* Build configuration list for PBXNativeTarget "UnitTestDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +556,7 @@
 				D2E6071A1C4CBCCD00881C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

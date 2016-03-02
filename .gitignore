@@ -1,1 +1,4 @@
 xcuserdata/
+build/
+out/
+test-reports
