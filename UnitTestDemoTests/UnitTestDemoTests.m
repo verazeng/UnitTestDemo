@@ -33,9 +33,19 @@
     XCTAssertEqualObjects(answer.answerText, @"answer");
 }
 
-- (void)testIsAnswerMatched {
+- (void)testIAnswerMatchedWhenCriterionMustMatch {
     Answer *answer = [[Answer alloc] initWithQuestion:@"quest" answer:@"answer"];
     Criterion *c = [[Criterion alloc] initWithAnswer:answer weight:eCriterionMustMatch];
+    
+    BOOL isMatched = [c isAnswerMatched:answer];
+    
+    XCTAssertTrue(isMatched);
+}
+
+- (void)testIAnswerMatchedWhenCriterionNotCare {
+    Answer *answer = [[Answer alloc] initWithQuestion:@"quest" answer:@"answer"];
+    Answer *answer1 = [[Answer alloc] initWithQuestion:@"quest1" answer:@"answer1"];
+    Criterion *c = [[Criterion alloc] initWithAnswer:answer1 weight:eCriterionNotCare];
     
     BOOL isMatched = [c isAnswerMatched:answer];
     
