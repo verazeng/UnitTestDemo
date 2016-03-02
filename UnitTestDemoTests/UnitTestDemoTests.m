@@ -52,4 +52,8 @@
     XCTAssertTrue(isMatched);
 }
 
+- (void)testEx {
+    //just for test
+}
+
 @end
